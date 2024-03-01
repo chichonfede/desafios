@@ -1,0 +1,84 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("../assets/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+body {
+    width: 100%;
+    background-color: var(--OffBlack);
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 375px;
+    transform: translate(-50%, -50%);
+    background-color: var(--DarkGrey);
+    border-radius: 15px;
+    padding: 14px;
+}
+
+.card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 300px;
+    width: 128px;
+    height: 128px;
+}
+
+.title {
+    color: var(--White);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-top: 0px;
+    font-family: Inter;
+    font-weight: 700;
+    color: var(--Green);
+}
+
+.description {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--White);
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: var(--Grey);
+    width: 75%;   
+    padding: 10px; 
+    border-radius: 10px;  
+    font-family: Inter;
+    font-weight: 600;
+    color: var(--White);
+    margin-bottom: 15px;
+}
